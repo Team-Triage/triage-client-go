@@ -1,4 +1,4 @@
-module triage-client-go
+module github.com/Team-Triage/triage-client-go
 
 go 1.19
 
