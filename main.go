@@ -3,7 +3,8 @@ package client
 import (
 	"log"
 	"net/http"
-	"triage-client-go/grpcServer/server"
+
+	"github.com/Team-Triage/triage-client-go/grpcServer/server"
 )
 
 func RequestConnection(triageNetworkAddress string) *http.Response {

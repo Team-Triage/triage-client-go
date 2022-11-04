@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"triage-client-go/grpcServer/pb" // import protobuf module
+	"github.com/Team-Triage/triage-client-go/grpcServer/pb" // import protobuf module
 
 	"google.golang.org/grpc"
 )
