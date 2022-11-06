@@ -8,10 +8,10 @@ import (
 	"github.com/Team-Triage/triage-client-go/grpcServer/server"
 )
 
-func main() {
-	OnMessage(messageHandler)
-	Listen()
-}
+// func main() {
+// 	OnMessage(messageHandler)
+// 	Listen()
+// }
 
 func messageHandler(message string) int {
 	fmt.Println(message)
