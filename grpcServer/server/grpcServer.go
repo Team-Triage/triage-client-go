@@ -27,8 +27,8 @@ func (s *MessageHandlerServer) SendMessage(ctx context.Context, in *pb.Message) 
 	return &pb.MessageResponse{Body: in.GetBody(), Status: int32(status)}, nil
 }
 
-func StartServer() {
-	lis, err := net.Listen("tcp", ":9001")
+func StartServer(networkAddress string) {
+	lis, err := net.Listen("tcp", ":"+networkAddress)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
