@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/Team-Triage/triage-client-go/grpcServer/pb" // import protobuf module
+	"github.com/team-triage/triage-client-go/grpcServer/pb" // import protobuf module
 
 	"google.golang.org/grpc"
 )
@@ -27,8 +27,8 @@ func (s *MessageHandlerServer) SendMessage(ctx context.Context, in *pb.Message) 
 	return &pb.MessageResponse{Body: in.GetBody(), Status: int32(status)}, nil
 }
 
-func StartServer() {
-	lis, err := net.Listen("tcp", ":9001")
+func StartServer(networkAddress string) {
+	lis, err := net.Listen("tcp", ":"+networkAddress)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
