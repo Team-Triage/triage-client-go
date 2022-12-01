@@ -1,2 +1,3 @@
 # triage-client-go
-Client library in Go
+A thin Client library for Triage written in Go Programming Language
+
