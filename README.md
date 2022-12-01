@@ -9,7 +9,7 @@ The `triage-client-go` library interacts with a Triage deployment by running a g
 
 <h2>How to get it</h2>
 
-To get the latest version, use go 1.19+ and fetch using the `go get` command. For example:
+To get the latest version, use `go 1.19*` and fetch using the `go get` command. For example:
 
     go get github.com/team-triage/triage-client-go
 
