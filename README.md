@@ -69,7 +69,7 @@ func main() {
   res := client.RequestConnection(triageNetworkAddress, grpcPort, authKey)
   
   if res.StatusCode == http.StatusOK {
-		fmt.Printf("Status: %v \n ready to receive messages!\n", res.StatusCode)
+		fmt.Printf("Status Code: %v \n ready to receive messages!\n", res.StatusCode)
 	} else {
 		fmt.Printf("Status Code: %v\n There was a problem connecting to Triage :(\n", res.StatusCode)
 	}
