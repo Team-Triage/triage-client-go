@@ -85,5 +85,3 @@ func dummyMessageHandler(msg string) int {
 }
 
 ```
-
-NEED TO TEAM's GH PROFILES
